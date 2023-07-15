@@ -4,10 +4,12 @@
  * @last modified on  : 07-15-2023
  * @last modified by  : pelayochristian.dev@gmail.com
  **/
-import { LightningElement, track } from 'lwc';
+import { LightningElement, api, track } from 'lwc';
 import { Calendar, Day } from './datepickerUtil';
 
 export default class Datepicker extends LightningElement {
+    @api labelName;
+
     @track month;
 
     _calendar;
